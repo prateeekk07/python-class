@@ -293,7 +293,7 @@ a = None # NoneType
 # Arithmetic operators
 # 5. Assignment operators
 # 2. Relational Operators or Comparison Operators
-# 3. Logical operators
+# 3. Logical operators 
 # 6. Special operators
 
 # 4. Bitwise oeprators
@@ -315,8 +315,73 @@ a = None # NoneType
 # special operators
     # membership operator - in, not in 
     # identity operator - is, is not
-
+# id
 # print("100" not in {"10": "Ten", 20: "Twenty", 30: "Thirty"})  # True
 
-a = 10
-print(hex(id(a)))
+# a = 10
+# print(id(a))
+# b = a
+# print(id(b))
+
+# mutable
+
+# a = [10,20,30] # 1235645
+# print(id(a))
+# # a[0] = 100
+# # print(a)
+# b = [10,30,20] # 45464648
+# # print(b)
+# print(id(b))
+# print(a is b) # memory address comparison
+# print(a == b) # content comparison
+# a = 10
+# b = 20
+# print(a is not b)
+
+# ascii values
+
+
+# print("ABCasdas" > "ABZ") # 67 < 90 # 
+
+
+# and
+# 0 0  0
+# 0 1  0
+# 1 0  0
+# 1 1  1
+
+# or 
+# 0 0  0
+# 0 1  1
+# 1 0  1
+# 1 1  1
+
+# not 
+# 0 1
+# 1 0.
+
+# print(not "ac")
+# print(not [])
+# print(bool([0]))
+
+
+# a = 10
+# b = 20
+# name = "Shivani"
+
+# if (a == b) and (name=="Shivani"): # True and False
+#     print("Valid")  # indentation - 4
+# else:
+#     print("Invalid")
+
+# PEP8 --> 
+
+# if False or True or True or True:
+#     print("Valid")
+# else:
+#     print("Invalid")
+
+# if a == b == c: # 10 == 20 == 30
+#     print("All are equal")
+
+#
