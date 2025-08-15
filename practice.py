@@ -73,7 +73,8 @@ ada = frozenset([1, 2, 3]) # frozenset object
 
 a = [12,23,12,23,34,123,32414]
 a[0] #12
-a[3]
+c = a[2:5] #[12, 23, 34]
+print(c)
 
 #properties of tuple
     #inmutable version of list
@@ -98,3 +99,33 @@ a[3]
     #no indexing
 
 #hello i am making some changes
+
+#memory location 
+numb1 = 10000 
+numb2 = 4314
+list1 = [32,23,23,23]
+list2 = [32,23,23,23]
+
+print(id(numb1)) 
+print(id(numb2))
+
+#operators
+
+#identity operators (is, is not) memory address comparison
+print(numb1 is numb2) #false
+print(numb1 is not numb2) #true
+print(list1 is list2) #false
+
+#Comparison (Relational) Operators content comparison
+print(list1 == list2) #true
+print(list1 != list2) #false
+print(numb1 > numb2) #true
+
+#logical operators 
+print(not ["das","da"]) #false
+print(not "") #true
+
+#control flow
+#conditional statement-- if, elsif, else
+#iterative statement-- for, while loop
+#transfer statemen-- break,continue, pass 
