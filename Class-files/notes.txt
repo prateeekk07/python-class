@@ -18,6 +18,7 @@ windows + shift + s
 
 Softwares :-
 - vs code  -- coding -- IDE -- run as administrator
+- Anydesk  -- remote access -->
 - notepad ++ -- notes  --> 
 - chatgpt -- signup -- learning platform  - 5 non-technical varieties -->
 - chrome -->  surfing
@@ -32,34 +33,28 @@ Softwares :-
 
 
 Python --> 
-C:\Users\Username\AppData\Local\Programs\Python\Python312   -- python.exe
-C:\Users\Username\AppData\Local\Programs\Python\Python312\Scripts -- pip.exe
+C:\Users\Username\AppData\Local\Programs\Python\Python312
 
-- can we install multiple python version on a system?
-Yes
+# Error
+- SyntaxError
+- IndexError
+- AttributeError
+   'frozenset' object has no attribute 'add'
+- TypeError
+    unhashable type: 'list'
+    tuple' object does not support item assignment
+- KeyError
+- ValueError
+    invalid literal for int() with base 10: 'abcd'
+    can only concatenate str (not "int") to str
 
-
-- Command Prompts
-	- chatgpt  - 5 non-technical prompt
-	- command prompt - 10 commands
-	
-short pointers  running notes
-3.10
-3.12
-
-python.exe
-pip.exe
-
-multi py version -> y
-cmd prompt
-cd -
-copy
-
-
-- short notes
-- revise using short notes -- session ke baad immediately
+# builtin functions
+- print
+- type
+- len
+- id  --> memory address
+- input -- to get the input from console
 
 
-IDE-- Integrated Development Enviornment
-
-VS Code
+- nested list
+- nested if
