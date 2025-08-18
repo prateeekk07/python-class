@@ -29,3 +29,16 @@
 #    print("you are top 50%")
 #else:
 #    print("you are fail")
+
+# username = "prateek"
+# password = "p1234"
+
+# entered_user = input("Enter username: ")
+# entered_pass = input("Enter password: ")
+
+# if entered_user == username and entered_pass == password:
+#     print("Login successful!")
+# elif entered_user == username and entered_pass != password:
+#     print("Incorrect password.")
+# else:
+#     print("User not found.")
