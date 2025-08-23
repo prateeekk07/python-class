@@ -20,3 +20,10 @@ l1[0] = 2
 
 print(l1) #[2, 'per', 34, [54, 45, 88], {'name': 'Prateek'}]
 
+fruits = ["apple","mango","apple","graphes"]
+print(fruits)
+
+datatypes  =[True,"string",23,(51,24,51),{"ads","das","fff"}]
+
+print(datatypes)
+

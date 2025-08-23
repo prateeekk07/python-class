@@ -1,0 +1,34 @@
+# identifiers rules
+- can not start with digit 
+    ex. 121var = 10
+
+# data types
+ - features, 3 example
+    - dict -> {"name": , age}
+             -> {"comp": "", co}
+             -> {"a": [asd], "b", {}, "c": 154}
+- list -->
+    - [10,20,30,40]
+    - [10,"sd", []] - 14 types list
+# control flow
+- cond
+    - if condition -- 5 example -- ()
+    - if and else - 5 example
+    - if elif elif elif else - 5 example
+- iter
+    - for loop -- for i in range(), for i in "asdasd",with all iterables
+    - for loop with if condition - 5 example
+    - nested for - 3 example
+    - while loop -- infinite, while with counter
+- transfer
+    - for loop with pass, continue, break
+    - while loop with pass, continue, break
+
+
+name of the file:-
+assignment_1_Rohit_Mande_20_08_2025.py
+
+personally whatsapp -->
+
+once shared, 
+*assignment_1_Rohit_Mande_20_08_2025 shared* on whats app group
