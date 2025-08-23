@@ -162,15 +162,18 @@ r = range(1,10)
 
 print(r) #range object 1 2 3 4 5 6 7 8 9 
 
+h1 = range(-10,-1)
+print(h1) #-10, -9, -8, -7, -6, -5, -4, -3, -2
 
 
-#byte
 
-a = bytes([4,5,6]) # bytes object
+# #byte
 
-#bytearray
+# a = bytes([4,5,6]) # bytes object
 
-b = bytearray([1,2,3]) # bytearray object
+# #bytearray
+
+# b = bytearray([1,2,3]) # bytearray object
 
 
 
