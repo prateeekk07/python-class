@@ -47,14 +47,20 @@ C:\Users\Username\AppData\Local\Programs\Python\Python312
 - ValueError
     invalid literal for int() with base 10: 'abcd'
     can only concatenate str (not "int") to str
+- NameError
+    - name 'func2' is not defined
+
 
 # builtin functions
 - print
-- type
-- len
+- type --> 
+- len  -- len of iterable
 - id  --> memory address
 - input -- to get the input from console
-
+- dir --> all attributes
+- enumerate --> index, value
 
 - nested list
 - nested if
+- nested for loop
+- nested function
