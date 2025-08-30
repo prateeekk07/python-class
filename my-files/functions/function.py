@@ -63,3 +63,31 @@
 #     print(kwargs)
 
 # username(name = "yashi",age=17)
+
+#Arguments 
+ #-formal
+ # -actual 
+    # - positional
+    # - default
+    # - keyword
+    # -vairiable length
+    # -vairiable length keyword
+
+#postional argument
+# def func(a,b,c):
+#     print(a,b,c)
+    
+# func(10,20,30)
+
+#defaut argument
+# def func(a,b,c=30): #default arguments are always at the end after non-default arg
+#     print(a,b,c)
+    
+# func(10,20)
+
+# keyword argument
+
+def func(a,b,c,d,e=100):
+    print(a,b,c,d,e)
+
+func(900,c=30,b=20,d=40) #a = positional arg #b,c,d are keyword arg #e is default arg 
