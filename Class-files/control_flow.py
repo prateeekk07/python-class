@@ -154,3 +154,59 @@
 #         print("❌ Incorrect password.")
 # else:
 #     print("❌ Username not found.")
+
+
+# nested for loop
+# for i in range(1, 6): # 1
+#     for j in range(1, 6):  # 1
+#         print(f"{i}-{j}", end=" ") # 11 12 13 14 15 
+#     print()
+
+# while loop
+
+# while condition:  # True or False
+    # statement
+
+# a = 0
+# while a < 10: 
+#     a += 1 
+#     print(a) 
+#     print("Hello") 
+
+
+# print("before loop")
+
+# while True:
+#     user_input = input("Enter your name:- ").lower()
+#     if user_input == "aniket":
+#         print("Hello Aniket")
+#         break
+#     else:
+#         print("Bye bye", user_input)
+
+# print("After loop")
+
+# count = 1
+
+# while count <= 5: # 1 <= 5
+#     if count % 2 == 0:
+#         print(count, "is even")
+#     else:
+#         print(count, "is odd")
+#     count += 1
+
+
+# password = ""
+
+# while password != "admin123": # "" != "admin123"
+#     password = input("Enter password: ") # admin123
+#     if password != "admin123":
+#         print("Wrong password, try again!")
+
+# print("Access Granted ✅")
+
+# for i in "abcdefghi":
+#     if i == "d":
+#         # TODO: testing is done with dummy data, awaiting for final data
+#         pass
+#     print(i) # abc
