@@ -357,6 +357,89 @@ def func(fn): # fn --> greet ka memory location
 def greet():
     return "Hello Everyone! "
 
-res = func(greet)
-print(res)
+# res = func(greet)
+# print(res)
+
+# lambda function
+# - anonymous 
+# - one liner 
+
+def add(a, b):
+    return a+b
+
+# res = add(10,20)
+# print(res)
+
+# add_lambda = lambda a, b=10: a+b
+# print(add_lambda(10))
+
+
+# is_even = lambda x: "Even" if x % 2 == 0 else "Odd"
+# print(is_even(70))  # Output: Odd
+
+# pairs = [(1,3), (5,1), (5, 8),(6, 0), (2, 6)]
+# sorted_pairs = sorted(pairs, key=lambda x: x[1])
+# print(sorted_pairs)
+
+# lst = [2,5,1,4,6]
+# lst.sort()
+
+# def func():
+#     def inner():
+#         pass
+#     return inner
+
+# res = func()
+# res()
+
+# power = lambda x: (lambda y: y**x)  # x=2, y=5
+# square = power(2)
+
+# cube = power(3)
+
+# print(square(5))  # Output: 25
+# print(cube(2))    # Output: 8
+
+# names = ["Alice", "Bob", "Charlie", "David"]
+# sorted_names = sorted(names, key=lambda x: len(x))
+# print(sorted_names)  # Output: ['Bob', 'Alice', 'David', 'Charlie']
+
+
+# higher order functions
+# filter, reduce, map
+
+# lst = [10,21,45,96,17,89,36]
+
+# def check_even(x):
+#     print("hi")
+#     if x%2 == 0:
+#         return True
+#     return False
+
+# res = filter(check_even, lst)
+# print(list(res))
+
+
+# lst = [10,21,45,96,17,89,36]
+
+
+# res = filter(lambda x: x%2 == 0, lst)
+# print(list(res))
+
+# map()
+
+# map_func = map(lambda x: x**3, [1,2,3,4,5,6,7,8,9,10])
+# print(list(map_func))
+
+# map_func = map(lambda x,y,z: x*y*z, [1,2,3], [4,5,6],[1,2,3])
+# print(list(map_func))
+
+
+# reduce -- 
+
+# from functools import reduce
+
+# print(reduce(lambda x, y: x*y, [1,2,3,4,5]))
+
+
 

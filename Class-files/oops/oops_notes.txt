@@ -1,0 +1,40 @@
+instance method
+    - to declare/access/update/delete instance variable
+    - self is reserved
+    - how to call
+        - outside the class -- using reference variable s1
+            s1.set_name(), s1.get_details()
+        - inside the class -- using self in a instance method
+            self.test_m1()
+
+instance variable
+    - attached to instance, seperate copy for each instance
+    - where to declare/access/delete/update  
+        - inside the class
+            - instance method -- using self
+                - print(self.name), self.name = "New name", del self.name, self.new_attr = value
+        - outside the class -- using reference variable 
+            - print(s1.name), s1.name = "New name", del s1.name, s1.new_attr = value
+
+#################################################################################################################3
+
+class method
+    - to declare/access/update/delete class level variable
+    - cls is reserved
+    - use @classmethod decorator
+    - how to call
+        - outside the class -- using class name
+            print(classname.college_name), classname.college_address = "Pune"
+        - inside the class -- using cls in classmethod
+            cls.test_class_method_m1() 
+
+class level variable
+    - attached to class, common for all the instances
+    - where to declare/access/delete/update  
+        - inside the class
+            - class method -- using cls
+                - print(cls.college_name), cls.college_name = "New college name", del cls.college_name, cls.college_name = value
+        - outside the class -- using classname
+            - print(Student.college_name), Student.college_name = "New name", del Student.college_name, Student.new_attr = value
+
+

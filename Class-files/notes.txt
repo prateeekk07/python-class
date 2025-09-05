@@ -59,6 +59,7 @@ C:\Users\Username\AppData\Local\Programs\Python\Python312
 - input -- to get the input from console
 - dir --> all attributes
 - enumerate --> index, value
+- sorted
 
 - nested list
 - nested if
