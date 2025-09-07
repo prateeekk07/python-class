@@ -42,9 +42,7 @@
 
 # print(fullname.count("a")) #3 
 
-fullname = "Prateek raj singh chouhan"
-
-print(" ".join(fullname))
+# print(fullname.replace("chouhan","rathore",1)) #Prateek raj rathore singh chouhan #replace(old, new, count)
 
 
 
