@@ -32,11 +32,29 @@
 
 #'append','insert, 'clear', 'copy', 'count', 'extend', 'index', ', 'pop', 'remove', 'reverse', 'sort']
 
-#'append'
+# Add → append, extend, insert
 
-list = [44,45,22,66]
+l1 = [34,55,77,44,322,33,88]
+l2 = [5,6,9,0]
 
-a = list.insert([1](77))
+# l1.append(99)
+# print(l1)
+# l1.extend(l2)
+# print(l1)
 
-print(list)
+l1.insert(6,"abhijeet")
+print(l1)
+
+# Remove → pop, remove, clear
+
+# Info → index, count
+
+# Order → reverse, sort
+
+# Copy → copy
+
+
+
+
+
 
