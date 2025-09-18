@@ -8,3 +8,9 @@
 - what is constructor?
 - what is __str__, __repr__ method?
 - what is __init__?
+- code for knowing how many objects of the class created?
+- does python support multiple inheritance? - algorithm
+- what is diamond problem?
+- has a relation and is a relation
+- infinite loop with for loop
+- method overloading in python?

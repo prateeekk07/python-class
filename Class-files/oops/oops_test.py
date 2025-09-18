@@ -223,3 +223,52 @@ Student DOB:- {self.date_of_birth}
 # def get_with_50_k_more():
 #     pass
 
+class CommonMethod(object): # parent
+    # def __str__(self):
+    #     return f"\n{self.__dict__}"
+    
+    # def __repr__(self):
+    #     return str(self)
+    pass
+class Address(CommonMethod): # child
+    def __init__(self, area, pin, city, state):
+        self.area = area
+        self.pincode = pin
+        self.city = city
+        self.state = state
+
+# a1 = Address("Karve Nagar", 411045, "Pune", "MH")
+# a2 = Address("Wakad", 412157, "Pune", "MH")
+# a3 = Address("Bavdhan", 412015, "Pune", "MH")
+# a4 = Address("Katraj", 4157869, "Pune", "MH")
+
+class Student(CommonMethod): # child
+    def __init__(self, name, age, marks, address):
+        self.name = name
+        self.age = age
+        self.marks = marks
+        self.address = address
+
+    # def __str__(self):
+    #     return self.name
+
+# class A:
+
+s1 = Student("A", 21, 85, "Pune")
+
+# print(s1)
+# print(s1.address.pincode)
+# s1.age = 23
+
+
+# OOPs -- 4 pillar
+# inheritance -- 
+# polymorphism
+# abstraction -- 
+# encapsulation -- 
+
+
+# class -- 
+object
+
+
