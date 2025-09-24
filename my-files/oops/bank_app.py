@@ -37,12 +37,16 @@ Account Balance: {self.balance}
         
 
     def withdraw(self,amt):
-        self.balance -= amt
-        print("Amount withdraw Succesfully")
-        self.show_balance()
+        if amt > self.balance:
+            print("Insuffceint balance")
+        else:
+            self.balance -= amt
+            print("Amount withdraw Succesfully")
+            self.show_balance()
 
 
 bank_obj = Bank(1122334455,"Prateek","Saving",5000)
-bank_obj.show_balance()        
+bank_obj.show_details()
+bank_obj.show_balance()         
 bank_obj.deposit(500)
-bank_obj.withdraw(1000)
+bank_obj.withdraw(1000000)

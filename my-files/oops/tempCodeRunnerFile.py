@@ -1,2 +1,3 @@
-print(s1.__dict__)
-# print(s2.__dict__)
+c = Car("Toyota", "Camry", 4)
+c.info()       # inherited from Vehicle
+c.car_info()   # specific to Car
