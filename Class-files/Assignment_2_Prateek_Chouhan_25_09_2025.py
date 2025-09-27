@@ -224,3 +224,48 @@
 # print(c.info(), "-", c.wheels())
 # print(b.info(), "-", b.wheels())
 # print(t.info(), "-", t.wheels())
+
+#abstraction
+
+#example 
+
+# from abc import ABC, abstractmethod
+
+# class Payment(ABC):  # Abstract class
+#     @abstractmethod
+#     def pay(self, amount):
+#         pass
+
+
+# class CreditCardPayment(Payment):
+#     def pay(self, amount):
+#         return f"Paid {amount}$ using Credit Card"
+
+
+# class PayPalPayment(Payment):
+#     def pay(self, amount):
+#         return f"Paid {amount}$ using PayPal"
+
+
+# # Usage
+# p1 = CreditCardPayment()
+# print(p1.pay(100))
+
+# p2 = PayPalPayment()
+# print(p2.pay(200))
+
+#Decorators
+
+# def log(func):
+#     def wrapper(*args, **kwargs):
+#         print(f"Calling function: {func.__name__}")
+#         result = func(*args, **kwargs)
+#         print(f"Finished function: {func.__name__}")
+#         return result
+#     return wrapper
+
+# @log
+# def greet(name):
+#     print(f"Hello, {name}!")
+
+# greet("Alice")
