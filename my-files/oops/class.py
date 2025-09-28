@@ -1,4 +1,4 @@
-from faker import Faker
+# from faker import Faker
 # class student:
 #      def __init__(self): #method actions # magic method/dunder method #self always point to the current object
 #           print("in init method")
@@ -113,3 +113,94 @@ from faker import Faker
     #           print(classname.college_name), classname.college_address = "Pune"
     #       - inside the class -- using cls in classmethod
     #           cls.test_class_method_m1()       
+
+# class Student:
+#     # Class variable
+#     school_name = "Greenwood High"
+
+#     def __init__(self, name, age):
+#         # Instance variables
+#         self.name = name
+#         self.age = age
+
+#     # Instance method (works on object/instance level)
+#     def display_info(self):
+#         return f"Name: {self.name}, Age: {self.age}, School: {Student.school_name}"
+
+#     # Class method (works on class level, not instance level)
+#     @classmethod
+#     def change_school(cls, new_name):
+#         cls.school_name = new_name
+#         return f"School name changed to {cls.school_name}"
+
+#     # Static method (general utility function, no self or cls needed)
+#     @staticmethod
+#     def is_adult(age):
+#         return age >= 18
+
+
+# # Example usage
+# # Creating objects
+# s1 = Student("Alice", 17)
+# s2 = Student("Bob", 19)
+
+# # Using instance method
+# print(s1.display_info())  
+# print(s2.display_info())
+
+# # Using class method
+# print(Student.change_school("Sunrise Academy"))
+# print(s1.display_info())
+
+# # Using static method
+# print(Student.is_adult(20))   # True
+# print(Student.is_adult(15))   # False
+
+class BankAccount:
+    # Class variable (same for all accounts)
+    bank_name = "National Bank"
+    interest_rate = 3.5   # default interest rate
+
+    def __init__(self, account_holder, balance=0):
+        # Instance variables (unique for each account)
+        self.account_holder = account_holder
+        self.balance = balance
+
+    # Instance method → works with individual account
+    def deposit(self, amount):
+        self.balance += amount
+        return f"{self.account_holder} deposited {amount}. New balance: {self.balance}"
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            return f"Insufficient funds for {self.account_holder}!"
+        self.balance -= amount
+        return f"{self.account_holder} withdrew {amount}. New balance: {self.balance}"
+
+    # Class method → changes class-level details (affects all accounts)
+    @classmethod
+    def set_interest_rate(cls, new_rate):
+        cls.interest_rate = new_rate
+        return f"Interest rate updated to {cls.interest_rate}% for all accounts."
+
+    # Static method → utility method (not tied to account or class variables)
+    @staticmethod
+    def calculate_interest(balance, rate):
+        return (balance * rate) / 100
+
+
+# Example usage
+# Creating accounts
+acc1 = BankAccount("Alice", 1000)
+acc2 = BankAccount("Bob", 500)
+
+# Instance methods
+print(acc1.deposit(200))
+print(acc2.withdraw(100))
+
+# Class method (update interest rate for all)
+print(BankAccount.set_interest_rate(5.0))
+
+# Static method (calculate interest without needing an object)
+print("Interest on 1000 at 5%:", BankAccount.calculate_interest(1000, 5))
+
