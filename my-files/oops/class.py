@@ -112,6 +112,4 @@ from faker import Faker
     #       - outside the class -- using class name
     #           print(classname.college_name), classname.college_address = "Pune"
     #       - inside the class -- using cls in classmethod
-    #           cls.test_class_method_m1()
-    
-
+    #           cls.test_class_method_m1()       
