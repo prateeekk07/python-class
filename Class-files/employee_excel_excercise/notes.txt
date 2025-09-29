@@ -1,0 +1,26 @@
+class employee --> objects --> function
+abstraction class --> file
+emp class --> parent - file abstraction class
+class objects --> insert in excel
+read --> from excel --> convert data into class objects
+
+abstraction --> file abstraction classes
+data --> to generate the emp data
+classes -- > employee classes
+excelfile --> load workbook function
+operation --> file operation like excel read, write
+implementation --> final implementation --> to call read, write
+
+
+Assignment:- 3 --> 28 sept 
+task:
+- add age --> current date - self.dob
+- name, surname split
+- use enumerate instead of c
+- list comprehension
+- digram
+- filter out data based on salary >
+- filter out data based on age -- 25->
+- filter based on profession --> engineer
+- filter based on profession --> engineer --> average salary
+- 
