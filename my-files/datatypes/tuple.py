@@ -14,4 +14,4 @@ print(cars) #('das', 34132, {'abc': 123}, 555)
 
 movies = ("thor","ironmman", "captain america")
 print(movies) #("thor","ironmman", "captain america")
-
+print(dir(cars))

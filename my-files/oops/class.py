@@ -94,7 +94,7 @@
     #           -print(Student.College_name), Student.College_name = "New name", del Student.College_name, Student.new_attr = value
 
 # methods 
-    # - instance method (wherever self ke yword is there it is called as instance method)
+    # - instance method (wherever self keyword is there it is called as instance method)
         # - to derclare/acces/update/delete instance vairiable 
         # self is reserved
         # how to call
@@ -156,51 +156,101 @@
 # print(Student.is_adult(20))   # True
 # print(Student.is_adult(15))   # False
 
-class BankAccount:
-    # Class variable (same for all accounts)
-    bank_name = "National Bank"
-    interest_rate = 3.5   # default interest rate
+# class BankAccount:
+#     # Class variable (same for all accounts)
+#     bank_name = "National Bank"
+#     interest_rate = 3.5   # default interest rate
 
-    def __init__(self, account_holder, balance=0):
-        # Instance variables (unique for each account)
-        self.account_holder = account_holder
-        self.balance = balance
+#     def __init__(self, account_holder, balance=0):
+#         # Instance variables (unique for each account)
+#         self.account_holder = account_holder
+#         self.balance = balance
 
-    # Instance method → works with individual account
-    def deposit(self, amount):
-        self.balance += amount
-        return f"{self.account_holder} deposited {amount}. New balance: {self.balance}"
+#     # Instance method → works with individual account
+#     def deposit(self, amount):
+#         self.balance += amount
+#         return f"{self.account_holder} deposited {amount}. New balance: {self.balance}"
 
-    def withdraw(self, amount):
-        if amount > self.balance:
-            return f"Insufficient funds for {self.account_holder}!"
-        self.balance -= amount
-        return f"{self.account_holder} withdrew {amount}. New balance: {self.balance}"
+#     def withdraw(self, amount):
+#         if amount > self.balance:
+#             return f"Insufficient funds for {self.account_holder}!"
+#         self.balance -= amount
+#         return f"{self.account_holder} withdrew {amount}. New balance: {self.balance}"
 
-    # Class method → changes class-level details (affects all accounts)
-    @classmethod
-    def set_interest_rate(cls, new_rate):
-        cls.interest_rate = new_rate
-        return f"Interest rate updated to {cls.interest_rate}% for all accounts."
+#     # Class method → changes class-level details (affects all accounts)
+#     @classmethod
+#     def set_interest_rate(cls, new_rate):
+#         cls.interest_rate = new_rate
+#         return f"Interest rate updated to {cls.interest_rate}% for all accounts."
 
-    # Static method → utility method (not tied to account or class variables)
-    @staticmethod
-    def calculate_interest(balance, rate):
-        return (balance * rate) / 100
+#     # Static method → utility method (not tied to account or class variables)
+#     @staticmethod
+#     def calculate_interest(balance, rate):
+#         return (balance * rate) / 100
 
 
-# Example usage
-# Creating accounts
-acc1 = BankAccount("Alice", 1000)
-acc2 = BankAccount("Bob", 500)
+# # Example usage
+# # Creating accounts
+# acc1 = BankAccount("Alice", 1000)
+# acc2 = BankAccount("Bob", 500)
 
-# Instance methods
-print(acc1.deposit(200))
-print(acc2.withdraw(100))
+# # Instance methods
+# print(acc1.deposit(200))
+# print(acc2.withdraw(100))
 
-# Class method (update interest rate for all)
-print(BankAccount.set_interest_rate(5.0))
+# # Class method (update interest rate for all)
+# print(BankAccount.set_interest_rate(5.0))
 
-# Static method (calculate interest without needing an object)
-print("Interest on 1000 at 5%:", BankAccount.calculate_interest(1000, 5))
+# # Static method (calculate interest without needing an object)
+# print("Interest on 1000 at 5%:", BankAccount.calculate_interest(1000, 5))
 
+# class Bank:
+#     employee_id = 1
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+
+#     def show_name(self,upname):
+#         self.name = upname  
+#         print(f"name is updated : {upname}")
+        
+#     def show_id(cls):
+#         print(cls.employee_id)
+
+
+# o1 = Bank("prateek",22)
+# o1.show_name("Abhijeet")
+# o1.show_id()
+    
+# class Bank:
+#     employee_id = 1
+
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def show_name(self, upname):
+#         self.name = upname  
+#         print(f"name is updated : {upname}")
+
+#     @classmethod
+#     def show_id(cls):
+#         print(f"Employee ID: {cls.employee_id}")
+
+#     @staticmethod
+#     def bank_policy():
+
+#         print("Bank policy: Minimum balance must be ₹1000.")
+
+# # Create object
+# o1 = Bank("Prateek", 22)
+
+# # Call instance method
+# o1.show_name("Abhijeet")
+
+# Call class method
+o1.show_id()
+
+# Call static method (can be called on class or object)
+Bank.bank_policy()
+o1.bank_policy()
