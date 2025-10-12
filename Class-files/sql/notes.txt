@@ -1,0 +1,38 @@
+SQL -- Structured Query Language
+NoSQL -- No Structured Query Language
+
+
+Databases:
+    - oracle
+    - MySQL
+    - PostgreSQL
+    - SQLite3 -- lightweight
+    - Mongo DB
+
+Folder
+    - excel files
+        - columns
+
+Database
+    - Tables
+        - Columns
+
+  city            |
+| country         |
+| countrylanguage |
+| employee        |
+| new_table       |
+| test_table 
+
+
+task
+- python enum
+
+
+show databases;
+show tables
+use db_name
+insert into 
+select * from
+update table set 
+delete from table

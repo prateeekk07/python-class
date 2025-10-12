@@ -14,3 +14,8 @@
 - has a relation and is a relation
 - infinite loop with for loop
 - method overloading in python?
+- name mangling?
+- True privacy?
+- what is context manager?- database connection
+- define decorator to calculate the time taken by function
+- 

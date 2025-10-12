@@ -19,7 +19,7 @@ import openpyxl
 FILE_PATH = r"D:\python b14\python-class\my-files\test.xlsx"
 
 wb = openpyxl.load_workbook(FILE_PATH)
-print(wb.sheetnames)
+print(wb.__dir__)
 
 # wb.save(filename=r"D:\python b14\python-class\my-files\test.xlsx")
 

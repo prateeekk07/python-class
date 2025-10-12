@@ -127,8 +127,41 @@
 
 # Single inheritance
 
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def speak(self):
+#         print(f"{self.name} makes a sound")
+
+# class Dog(Animal):
+#     def bark(self):
+#         print(f"{self.name} barks loudly!")
+
+# # Create an object of Dog
+# dog1 = Dog("Buddy")
+# dog1.speak()  # inherited method
+# dog1.bark()   # child method
 
 
+
+class CPU:
+    def __init__(self,ram):
+        self.ram = ram
+
+    def show_ram(self):
+        print({self.ram})
+    
+class Gaming(CPU):
+    def gpu(self,gname):
+        self.gname = gname
+        print(f"ram = {self.ram} ## gpu = {self.gname}")
+
+c1 = CPU("16gb")
+
+Gaming.gpu("rtx 4070")
+
+        
 
 
 

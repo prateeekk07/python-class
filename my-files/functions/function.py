@@ -87,7 +87,7 @@
 
 # keyword argument
 
-def func(a,b,c,d,e=100):
-    print(a,b,c,d,e)
+# def func(a,b,c,d,e=100):
+#     print(a,b,c,d,e)
 
-func(900,c=30,b=20,d=40) #a = positional arg #b,c,d are keyword arg # is default arg 
+# func(900,c=30,b=20,d=40) #a = positional arg #b,c,d are keyword arg # is default arg 
