@@ -18,5 +18,9 @@
 
 # count_vowel()
 
-L = [x*x for x in range(5)]
-print(L)
+# L = [x*x for x in range(5)]
+# print(L)
+
+# print("just testing in mac")
+
+
