@@ -5,3 +5,6 @@ from django.db import models
 class TestModel(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField(default=25)
+
+    class Meta:
+        db_table = "test_model"
