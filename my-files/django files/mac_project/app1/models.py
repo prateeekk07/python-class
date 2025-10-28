@@ -9,4 +9,8 @@ class TestModel(models.Model):
 
     class Meta:
         db_table = "test_model"
-        
+
+class Employee(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    
