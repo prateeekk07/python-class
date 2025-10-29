@@ -3,5 +3,6 @@ from . import views # import your views fromthe same app
 
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('home/', views.home, name='home'),
+    path('book-list', views.show_books, name='show_books'),
 ]

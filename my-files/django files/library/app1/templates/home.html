@@ -6,14 +6,18 @@
     <title>Library</title>
 </head>
 <body>
-    {% for i in prateek %}
-        {{i}}<br>
-    {% endfor %}
+   
     <form action="" method="post">
-        Name: <input type="text">
-        Price: <input type="text">
-        Qty: <input type="text">
-        Author: <input type="text">
+        {% csrf_token %}
+        <label>Name</label>
+        <input type="text" name="nm"><br><br>
+        <label>Quantity </label>
+        <input type="number" name="qty"><br><br>
+        <label>Price: </label>
+        <input type="number" name="prc"> <br><br>       
+        <label>Author: </label>
+        <input type="text" name="auth"><br><br>
+        <input type="submit" value="Submit Book">
     </form>
 </body>
 </html>
