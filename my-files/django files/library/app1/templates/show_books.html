@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+      <style>
+        table { border-collapse: collapse; width: 100%;}
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left;}
+        th { background: #f4f4f4; }
+    </style>
 </head>
 <body>
 
@@ -16,21 +21,33 @@
                 <th>Qty</th>
                 <th>Price</th>
                 <th>Published</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             {% for bk in all_books %}
              <tr>
+                <td>{{bk.id}}</td>
                 <td>{{bk.name}}</td>
                 <td>{{bk.auhtor}}</td>
                 <td>{{bk.qty}}</td>
                 <td>{{bk.price}}</td>
-                <td>{{bk.name}}</td>
-                <td>{{bk.name}}</td>
+                <td>{{bk.is_published}}</td>
+                <td>
+                    <form action="{% url 'delete_book' bk.id %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Hard Delete">
+                    </form>
+                       <form action="{% url 'update_book' bk.id %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Update">
+                    </form>
+                </td>
             </tr>
             {% endfor %}
         </tbody>
-    </table>
+    </table><br><br>
+    <a href="{% url 'home' %}">Home</a>
 
 </body>
 </html>

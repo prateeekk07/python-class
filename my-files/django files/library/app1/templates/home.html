@@ -7,17 +7,23 @@
 </head>
 <body>
    
-    <form action="" method="post">
+    <form method="post" action = "{% url 'home' %}">
         {% csrf_token %}
-        <label>Name</label>
-        <input type="text" name="nm"><br><br>
+        {% if single_book %}
+        <label>ID</label>
+        <input type="number" name="id" value="{{single_book.id}}" readonly><br><br>
+        {% endif %}
+
+        <label>Name </label>
+        <input type="text" name="nm" value="{{single_book.name}}"><br><br>
         <label>Quantity </label>
-        <input type="number" name="qty"><br><br>
+        <input type="number" name="qty" value="{{single_book.qty}}"><br><br>
         <label>Price: </label>
-        <input type="number" name="prc"> <br><br>       
+        <input type="number" name="prc" value="{{single_book.price}}"> <br><br>       
         <label>Author: </label>
-        <input type="text" name="auth"><br><br>
+        <input type="text" name="auth" value="{{single_book.author}}"><br><br>
         <input type="submit" value="Submit Book">
-    </form>
+    </form><br><br>
+    <a href="{% url 'show_books' %}">Show books</a>
 </body>
 </html>
