@@ -28,7 +28,8 @@ def home(request):
         return render(request, "home.html")
 
 def show_books(request):
-    books = Book.objects.all()
+    #books = Book.objects.all()
+    books = Book.objects.filter(is_deleted=False)
     return render(request, "show_books.html", {"all_books": books})
 
 def update_book(request,pk):
@@ -39,3 +40,12 @@ def delete_book(request,pk):
     book = Book.objects.get(id=pk)
     book.delete()
     return redirect("show_books")
+
+def soft_delete_book(request,pk):
+    book = Book.objects.get(id=pk)
+    book.is_deleted = True
+    book.save()
+    return redirect("show_books")
+
+
+

@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
    
     <form method="post" action = "{% url 'home' %}">
         {% csrf_token %}
@@ -22,8 +16,13 @@
         <input type="number" name="prc" value="{{single_book.price}}"> <br><br>       
         <label>Author: </label>
         <input type="text" name="auth" value="{{single_book.author}}"><br><br>
-        <input type="submit" value="Submit Book">
+        
+        {% if single_book %}
+            <input type="submit" value="Update Book">
+        {% else %}
+            <input type="submit" value="Create Book">
+        {% endif %} 
     </form><br><br>
     <a href="{% url 'show_books' %}">Show books</a>
-</body>
-</html>
+
+    {% endblock %}
